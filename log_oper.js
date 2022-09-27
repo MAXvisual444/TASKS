@@ -1,13 +1,13 @@
 "use strict"
 
-// const hamburger = true;
-// const fries = false;
+const hamburger = true;
+const fries = false;
 
-// if (hamburger && fries) {
-//     console.log('I`m full');
-// }
+if (hamburger && fries) {
+    console.log('I`m full');
+}
 
-// console.log((hamburger && fries));
+console.log((hamburger && fries));
 
 // const hamburger = 3;
 // const fries = 1;
@@ -68,12 +68,12 @@
  
 // console.log( 5 === 5 && 3 > 1 || 5);
 
-const hamburger = 3;
-const fries = 3;
-const cola = 0;
-const nuggets = 2;
  
-if (hamburger === 3 && cola || fries === 3 && nuggets) {
-   console.log('Done!');
-}
+// }const hamburger = 3;
+// const fries = 3;
+// const cola = 0;
+// const nuggets = 2;
+ 
+// if (hamburger === 3 && cola || fries === 3 && nuggets) {
+//    console.log('Done!');
 
