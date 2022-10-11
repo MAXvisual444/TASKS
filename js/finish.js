@@ -54,3 +54,25 @@ console.log(myInfo); // option 2
 const personInfo = `My name is ${myName} ${mySurname} and I am ${myProfession}`;
 
 console.log(personInfo); // option 3
+
+/** Завдання 5 - Коментар */
+
+// 1. Single Line Comments
+
+let a = 2; // Single line comment
+let b = 3; // Inline comment 
+let c = a * b; // Declare c, give it the value of a * b
+
+// 2. Multi-line Comments 1
+/* This is 
+multiline 
+comment */
+const myInfo = 'My name is ' + myName + ' ' + mySurname + ' and I am ' + myProfession;
+
+// Multi-line Comments 2
+/**
+ * This is
+ * multiline
+ * comments
+ */
+ const myInfo = 'My name is ' + myName + ' ' + mySurname + ' and I am ' + myProfession;
