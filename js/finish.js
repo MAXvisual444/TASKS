@@ -60,7 +60,9 @@ console.log(personInfo); // option 3
 // 1. Single Line Comments
 
 let a = 2; // Single line comment
+
 let b = 3; // Inline comment 
+
 let c = a * b; // Declare c, give it the value of a * b
 
 // 2. Multi-line Comments 1
@@ -75,4 +77,4 @@ const myInfo = 'My name is ' + myName + ' ' + mySurname + ' and I am ' + myProfe
  * multiline
  * comments
  */
- const myInfo = 'My name is ' + myName + ' ' + mySurname + ' and I am ' + myProfession;
+ const personInfo = `My name is ${myName} ${mySurname} and I am ${myProfession}`;
