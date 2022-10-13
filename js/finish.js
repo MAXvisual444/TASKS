@@ -78,3 +78,21 @@ const myInfo = 'My name is ' + myName + ' ' + mySurname + ' and I am ' + myProfe
  * comments
  */
  const personInfo = `My name is ${myName} ${mySurname} and I am ${myProfession}`;
+
+ /** Завдання 6 - Data types */
+
+const myString = "Max";
+const myNumber = 73;
+const myBoolean = true;
+const myNull = null;
+let myUndefined;
+const myObject = {};
+const myArray = []; 
+
+console.log(typeof myString)
+console.log(typeof myNumber)
+console.log(typeof myBoolean)
+console.log(typeof myNull)
+console.log(typeof myUndefined)
+console.log(typeof myObject)
+console.log(typeof myArray)
