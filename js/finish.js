@@ -96,3 +96,11 @@ console.log(typeof myNull)
 console.log(typeof myUndefined)
 console.log(typeof myObject)
 console.log(typeof myArray)
+
+/** Зaвдання 7 - Regular function */
+
+function printMyName() {
+    const myName = 'Max';
+    console.log(myName);
+}
+printMyName();
