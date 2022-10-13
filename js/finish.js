@@ -104,3 +104,12 @@ function printMyName() {
     console.log(myName);
 }
 printMyName();
+
+/** Task 8 - Assigning a function to a variable */
+
+const hello = function (name) {
+    return 'hello, ' + name;
+}
+ console.log(hello('Max'));
+
+ console.log(hello('Ilona'));
