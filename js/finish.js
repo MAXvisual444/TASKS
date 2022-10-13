@@ -113,3 +113,31 @@ const hello = function (name) {
  console.log(hello('Max'));
 
  console.log(hello('Ilona'));
+
+ function myFn(a, b) {
+    let c
+    a = a + 1
+    c = a + b
+    // console.log(c)
+    return c
+ }
+
+ console.log(myFn(10, 3)); // 14
+
+function myFn() {}
+myFn(); // undefined
+
+/** Task 9 - arrow function */
+
+// Explicitly returning a result
+
+// const helloWorld = () => {
+//    return 'Hello, World!'
+// }
+
+// console.log(helloWorld());
+
+// Implicit returning a result
+const helloWorld = () => 'Hello, World!'
+
+console.log(helloWorld());
