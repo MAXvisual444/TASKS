@@ -141,3 +141,18 @@ myFn(); // undefined
 const helloWorld = () => 'Hello, World!'
 
 console.log(helloWorld());
+
+/*Task 10 - jsdoc */
+
+/**
+ * Returns the difference of two numbers
+ * @param {number} a 
+ * @param {number} b 
+ * @returns {number} difference of numbers
+ */
+ function diff(a, b) {
+    return a - b;
+  }
+  
+  const result = diff(10, 5);
+  console.log(result);
