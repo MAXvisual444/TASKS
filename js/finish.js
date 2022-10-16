@@ -156,3 +156,19 @@ console.log(helloWorld());
   
   const result = diff(10, 5);
   console.log(result);
+
+/**Task 11 - Callback function */
+
+  function printMyName() {
+    console.log('Max');
+  }
+
+  console.log('Start');
+
+  setTimeout(printMyName, 2000);
+
+setTimeout(() => console.log('Hello World'), 5000);
+
+
+
+
