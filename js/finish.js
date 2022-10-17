@@ -169,6 +169,20 @@ console.log(helloWorld());
 
 setTimeout(() => console.log('Hello World'), 5000);
 
+/**Task 12 - Create object */
+
+const person = {
+  name:'Maksym',
+  surname:'Avilov', 
+  favoriteNumber:4
+};
+
+const personInfo = `My name is ${person.name} ${person.surname} and my favorite number is ${person.favoriteNumber}`;
+
+console.log(personInfo);
+
+
+
 
 
 
