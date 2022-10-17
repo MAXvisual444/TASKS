@@ -181,6 +181,14 @@ const personInfo = `My name is ${person.name} ${person.surname} and my favorite 
 
 console.log(personInfo);
 
+/**Task 13-string-length */
+
+const myFavoriteSport = 'Boxing!';
+
+const stringLength = myFavoriteSport.length;
+
+console.log(stringLength);
+
 
 
 
