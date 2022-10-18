@@ -189,6 +189,24 @@ const stringLength = myFavoriteSport.length;
 
 console.log(stringLength);
 
+/**Task 14-uppercase-string */
+
+const myFavoriteSeason = 'spring';
+
+console.log(myFavoriteSeason instanceof String);
+
+console.log(typeof myFavoriteSeason);
+
+const seasonToUpperCase = myFavoriteSeason.toUpperCase();
+
+console.log(seasonToUpperCase);
+
+
+// // СОЗДАНИЕ ЭКЗЕМПЛРЯРА String
+const myString = new String('Maxsym');
+console.log(myString instanceof String);
+console.log(typeof myString);
+console.log(myString.toUpperCase());
 
 
 
