@@ -223,3 +223,13 @@ console.log(myArray[0]);
 
 console.log(myArray.length);
 
+// Task 17-replace-element-array
+
+const myArray = ['box', null, 123, true];
+
+console.log(myArray);
+
+myArray[1] = 4;
+
+console.log(myArray);
+
