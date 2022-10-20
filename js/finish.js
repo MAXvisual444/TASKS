@@ -215,5 +215,11 @@ const updatedGreeting = greeting.replace('Morning', 'Evening');
 
 console.log(updatedGreeting);
 
+// Task 16-create-array
 
+const myArray = [4, false, 'Maxim'];
+
+console.log(myArray[0]);
+
+console.log(myArray.length);
 
