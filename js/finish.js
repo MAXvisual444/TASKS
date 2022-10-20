@@ -201,7 +201,7 @@ const seasonToUpperCase = myFavoriteSeason.toUpperCase();
 
 console.log(seasonToUpperCase);
 
-// // СОЗДАНИЕ ЭКЗЕМПЛРЯРА String
+// // Creating an instance String
 // const myString = new String('Maxsym');
 // console.log(myString instanceof String);
 // console.log(typeof myString);
