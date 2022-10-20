@@ -201,14 +201,19 @@ const seasonToUpperCase = myFavoriteSeason.toUpperCase();
 
 console.log(seasonToUpperCase);
 
-
 // // СОЗДАНИЕ ЭКЗЕМПЛРЯРА String
-const myString = new String('Maxsym');
-console.log(myString instanceof String);
-console.log(typeof myString);
-console.log(myString.toUpperCase());
+// const myString = new String('Maxsym');
+// console.log(myString instanceof String);
+// console.log(typeof myString);
+// console.log(myString.toUpperCase());
 
+// Task 15-replace-part-string
 
+const greeting = 'Good Morning';
+
+const updatedGreeting = greeting.replace('Morning', 'Evening');
+
+console.log(updatedGreeting);
 
 
 
