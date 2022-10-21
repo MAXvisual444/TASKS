@@ -233,3 +233,9 @@ myArray[1] = 4;
 
 console.log(myArray);
 
+// Task 18-iterate-over-array
+
+const myArray = [74, 'abc', null, true, undefined, 730];
+
+myArray.forEach((element) => console.log(element));
+
