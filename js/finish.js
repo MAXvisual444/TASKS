@@ -239,3 +239,13 @@ const myArray = [74, 'abc', null, true, undefined, 730];
 
 myArray.forEach((element) => console.log(element));
 
+// Task 19-push-to-array
+
+const myArray = [1, 4, undefined, null];
+
+myArray.push(7, 54);
+
+console.log(myArray);
+
+console.log(myArray.length);
+
