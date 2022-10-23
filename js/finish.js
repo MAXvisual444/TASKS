@@ -241,11 +241,17 @@ myArray.forEach((element) => console.log(element));
 
 // Task 19-push-to-array
 
-const myArray = [1, 4, undefined, null];
+const myNumbers = [1, 4, 10, 77];
 
-myArray.push(7, 54);
+console.log(myNumbers);
 
-console.log(myArray);
+myNumbers.push(7, 54);
 
-console.log(myArray.length);
+console.log(myNumbers);
+
+myNumbers.push(847);
+
+console.log(myNumbers);
+
+console.log(myNumbers.length);
 
