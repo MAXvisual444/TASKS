@@ -255,3 +255,13 @@ console.log(myNumbers);
 
 console.log(myNumbers.length);
 
+// Task 20-date
+
+const currentDate = new Date();
+
+console.log(currentDate);
+
+const currentDateInMs = currentDate.getTime();
+
+console.log(currentDateInMs);
+
