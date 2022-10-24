@@ -235,9 +235,16 @@ console.log(myArray);
 
 // Task 18-iterate-over-array
 
-const myArray = [74, 'abc', null, true, undefined, 730];
+// const myArray = [74, 'abc', null, true, undefined, 730];
+// myArray.forEach((element) => console.log(element));
 
-myArray.forEach((element) => console.log(element));
+// // Creating an instance String
+const myArray = [1, 2, 3, 4, 10];
+
+const res = myArray.forEach(el => console.log(el * 2));
+
+console.log(res);
+console.log(myArray);
 
 // Task 19-push-to-array
 
