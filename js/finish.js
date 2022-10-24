@@ -238,7 +238,7 @@ console.log(myArray);
 // const myArray = [74, 'abc', null, true, undefined, 730];
 // myArray.forEach((element) => console.log(element));
 
-// // Creating an instance String
+// // Creating an instance forEach array
 const myArray = [1, 2, 3, 4, 10];
 
 const res = myArray.forEach(el => console.log(el * 2));
@@ -286,6 +286,17 @@ const newArray = myArray.map( function (el) {
 
 console.log(newArray);
 
+// Task 22-comparison-variables
+
+let myVariable1 = 10;
+let myVariable2 = '5';
+
+console.log(parseInt(myVariable1) <= parseInt(myVariable2));
+
+myVariable1 = '20';
+myVariable2 = 100;
+
+console.log(parseInt(myVariable1) <= parseInt(myVariable2));
 
 
 
