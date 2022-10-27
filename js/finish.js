@@ -314,3 +314,10 @@ console.log(myNumber1 % myNumber2);
 
 console.log(((100 % 23) % 5) % 3);
 
+// Task 24-or-and-operators
+
+console.log(3 || (true && null) || false);
+
+console.log(true && null && 10);
+
+console.log(3 || null || false);
