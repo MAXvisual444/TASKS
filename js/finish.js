@@ -321,3 +321,23 @@ console.log(3 || (true && null) || false);
 console.log(true && null && 10);
 
 console.log(3 || null || false);
+
+// Task 25-alternative-binary-operators
+
+let a = 10;
+
+// a = a + 1
+a += 1;
+console.log(a); // 11
+
+// a = a * 2
+a *= 2;
+console.log(a); // 22
+
+// a = a - 5
+a -= 5;
+console.log(a); // 17
+
+// a = a / 2
+a /= 2;
+console.log(a); 
