@@ -390,3 +390,15 @@ if (newVariable > 10) {
   *                 expression
   */
 }
+
+// Task 27-what-will-be-logged
+
+function fn() {
+  console.log('Hello from the function fn');
+
+  return function (a) {
+    console.log(a);
+  };
+}
+
+fn()(true);
