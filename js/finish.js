@@ -455,3 +455,14 @@ myFunction();
 setTimeout(function () {
   console.log('Hello from the function myFn');
 }, 2000);
+
+// 32-intervals-timeout 
+
+let i = 1;
+
+const messageIntervalId = setInterval(() => {
+  console.log('Message number ' + i);
+  i += 1;
+}, 2000);
+
+setTimeout(() => clearInterval(messageIntervalId), 11000);
