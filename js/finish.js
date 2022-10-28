@@ -462,6 +462,8 @@ let i = 1;
 
 const messageIntervalId = setInterval(() => {
   console.log('Message number ' + i);
+  // i = i + 1
+
   i += 1;
 }, 2000);
 
