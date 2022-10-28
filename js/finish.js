@@ -438,3 +438,14 @@ myFavoriteAnimal = 'Dog';
 
 console.log(myFavoriteAnimal);
 // 'Dog'
+
+// 30-strict-mode
+
+'use strict'
+
+function myFunction() {
+  const a = 2;
+  return a;
+}
+
+myFunction();
