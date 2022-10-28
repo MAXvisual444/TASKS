@@ -449,3 +449,9 @@ function myFunction() {
 }
 
 myFunction();
+
+// 31-callback-function
+
+setTimeout(function () {
+  console.log('Hello from the function myFn');
+}, 2000);
