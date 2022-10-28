@@ -432,7 +432,9 @@ console.log(arr);
 let myFavoriteAnimal = 'Monkey';
 
 console.log(myFavoriteAnimal);
+// 'Monkey
 
 myFavoriteAnimal = 'Dog';
 
 console.log(myFavoriteAnimal);
+// 'Dog'
