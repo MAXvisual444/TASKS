@@ -426,3 +426,13 @@ console.log(arr);
 // arr = [1, 2, 3, 4];
 
 // console.log(arr);
+
+// 29-let
+
+let myFavoriteAnimal = 'Monkey';
+
+console.log(myFavoriteAnimal);
+
+myFavoriteAnimal = 'Dog';
+
+console.log(myFavoriteAnimal);
