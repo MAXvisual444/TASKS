@@ -468,3 +468,13 @@ const messageIntervalId = setInterval(() => {
 }, 2000);
 
 setTimeout(() => clearInterval(messageIntervalId), 11000);
+
+// Task 33-add-start-of-the-array
+
+const myArray = [true, null];
+
+myArray.unshift('Hello');
+
+console.log(myArray.unshift(100));
+
+console.log(myArray);
