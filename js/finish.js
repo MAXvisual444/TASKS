@@ -478,3 +478,15 @@ myArray.unshift('Hello');
 console.log(myArray.unshift(100));
 
 console.log(myArray);
+
+// 34-add-at-index-array
+
+const myArray = [1, 2];
+
+myArray[10] = 'abc';
+
+console.log(myArray);
+
+console.log(myArray.length);
+
+
