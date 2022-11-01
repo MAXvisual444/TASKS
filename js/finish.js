@@ -223,7 +223,7 @@ console.log(myArray[0]);
 
 console.log(myArray.length);
 
-// Task 17-replace-element-array
+// Task 17-replace-key-array
 
 const myArray = ['box', null, 123, true];
 
@@ -236,7 +236,7 @@ console.log(myArray);
 // Task 18-iterate-over-array
 
 // const myArray = [74, 'abc', null, true, undefined, 730];
-// myArray.forEach((element) => console.log(element));
+// myArray.forEach((key) => console.log(key));
 
 // // Creating an instance forEach array
 const myArray = [1, 2, 3, 4, 10];
@@ -520,4 +520,25 @@ cars.push(newCar);
 console.log(cars);
 
 console.log(cars[1].carBrand);
+
+// Task 36-object-iteration
+
+const myObject = {
+  key1: true,
+  key5: 10,
+  key3: 'abc',
+  key4: null,
+  key10: NaN,
+};
+
+// const result = Object.keys(myObject);
+// console.log(result);
+
+const objectKeys = Object.keys(myObject);
+objectKeys.forEach((key) => {
+  if (key === 'key1' || key === 'key3') {
+    console.log(myObject[key]);
+  }
+});
+
 
