@@ -576,3 +576,19 @@ console.log('ORIGINAL ARRAY', myNumbers);
 
 // console.log(myNumbers.includes(2357));
 
+// Task 38-for-in-loop
+
+const myObject = {
+  name: 'Mike',
+  age: 30,
+  city: 'London',
+};
+
+Object.prototype.country = 'England';
+
+for (let key in myObject) {
+  if (myObject.hasOwnProperty(key)) {
+    console.log(myObject[key]);
+  }
+}
+
