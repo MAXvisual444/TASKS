@@ -592,3 +592,39 @@ for (let key in myObject) {
   }
 }
 
+// 39-ternary-operator
+
+// 0 - without else
+function isArrayEmpty(inputArray) {
+  if (inputArray.length > 0) {
+    return 'The array is not empty';
+  }
+
+  return 'The array is empty';
+}
+
+console.log(isArrayEmpty([1, 3]));
+console.log(isArrayEmpty([]));
+
+// 1 - ternary operator
+function isArrayEmpty(inputArray) {
+  return inputArray.length > 0 ? 'The array is not empty' : 'The array is empty';
+}
+
+console.log(isArrayEmpty([1, 3]));
+console.log(isArrayEmpty([]));
+
+// 2 - explicitly returning the result
+const isArrayEmpty = (inputArray) => {
+  return inputArray.length > 0 ? 'The array is not empty' : 'The array is empty';
+}
+
+console.log(isArrayEmpty([1, 3]));
+console.log(isArrayEmpty([]));
+
+// 3 - implicit return of the result
+const isArrayEmpty = (inputArray) =>
+  inputArray.length > 0 ? 'The array is not empty' : 'The array is empty';
+
+console.log(isArrayEmpty([1, 3]));
+console.log(isArrayEmpty([]));
