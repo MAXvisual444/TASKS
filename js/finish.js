@@ -637,3 +637,25 @@ const cityInfo = (index, city) =>
 `${city} is at the index ${index} in the myCities array`;
 
 myCities.forEach((city, index) => console.log(cityInfo(index, city)));
+
+// 41-loop-for
+
+// 1.Iterate 0 to 10 using for loop.
+
+for(let i = 0; i <= 10; i++){
+  console.log(i);
+}
+
+// 2.Iterate 10 to 0 using for loop.
+
+for(let i = 10; i >= 0; i--){
+  console.log(i);
+}
+
+// 3.Iterate 0 to n using for loop.
+
+let n = 10;
+for (let i=0; i<= n; i++){
+  console.log(i);
+}
+
