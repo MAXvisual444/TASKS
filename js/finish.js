@@ -695,3 +695,39 @@ const posts = [
 console.log(findPostById(6134, posts)); // { postId: 6134, commentsQuantity: 2 }
 
 console.log(findPostById(4511, posts)); // undefined
+
+// 44-is-array-sorted-or-not
+
+const arraySortInfo = (inputArray) => {
+  if (inputArray.some((element) => typeof element !== 'number')) {
+    return 'Some elements are not numbers';
+
+  }
+  if (
+    inputArray.every((element, index) =>
+      index > 0 ? element >= inputArray[index - 1] : true
+    )
+  ) {
+    return 'Sort array in ascending order';
+  }
+
+  if (
+    inputArray.every((element, index) =>
+      index > 0 ? element <= inputArray[index - 1] : true
+    )
+  ) {
+    return 'Sort array in descending order';
+  }
+
+  return 'Array is not sorted';
+};
+
+const a = [5, 'abc', 10, 1];
+const b = [4, 10, 14, 25, 25, 50];
+const c = [150, 132, 80, 40];
+const d = [15, 26, 10, 23, 85];
+
+console.log(arraySortInfo(a)); // Some elements are not numbers
+console.log(arraySortInfo(b)); // Sort array in ascending order
+console.log(arraySortInfo(c)); // Sort array in descending order
+console.log(arraySortInfo(d)); // Array is not sorted
