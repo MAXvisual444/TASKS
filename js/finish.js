@@ -756,3 +756,15 @@ const d = [1, 2, 3, 4];
 console.log(areArraysEqual(a, b)); // true
 console.log(areArraysEqual(a, c)); // false
 console.log(areArraysEqual(a, d)); // false
+
+// 46-element-is-in-array
+
+function isElementInArray(inputArray, searchElement) {
+  return inputArray.includes(searchElement);
+}
+
+const transports = ['Bus', 'Car', 'Bicycle', 'Airplane'];
+
+console.log(isElementInArray(transports, 'Bus')); // true
+console.log(isElementInArray(transports, 'Phone')); // false
+console.log(isElementInArray(transports, 'Airplane')); // true
