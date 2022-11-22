@@ -806,3 +806,27 @@ console.log(isElementInArray({ title: 'Apple', quantity: 25 }, fruits)); // true
 console.log(isElementInArray({ title: 'Banana' }, fruits)); // false
 
 console.log(isElementInArray(25, primitiveTypesArray)); // true
+
+// 48-push-to-array-if-not-exists
+
+const pushIfUnique = (inputArray, newElement) => {
+  if (inputArray.includes(newElement)) {
+    return console.log(`${newElement} already in the array`);
+  }
+
+  inputArray.push(newElement);
+}
+
+const myNumbers = [123, 50, 27];
+
+pushIfUnique(myNumbers, 50); // "50 already in the array"
+console.log(myNumbers) // [123, 50, 27]
+
+pushIfUnique(myNumbers, 80);
+console.log(myNumbers); // [123, 50, 27, 80]
+
+pushIfUnique(myNumbers, 80); // "80 already in the array"
+console.log(myNumbers); // [123, 50, 27, 80]
+
+pushIfUnique(myNumbers, 77);
+console.log(myNumbers); // [123, 50, 27, 80, 77]
