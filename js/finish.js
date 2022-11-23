@@ -866,3 +866,49 @@ console.log(popularPostsIds(inputPosts, 10)); // [3421, 8135]
 console.log(popularPostsIds(inputPosts, 15)); // [3421]
 
 console.log(popularPostsIds(inputPosts, 50)); // []
+
+// 50-reduce-to-object
+
+function quantitiesByCategories (products) {
+  return products.reduce((qtysByCategories, product) => {
+    const { category, quantity } = product;
+
+    qtysByCategories[category] = (qtysByCategories[category] || 0) + quantity;
+
+    return qtysByCategories;
+  }, {}); 
+}
+
+const inputProducts = [
+  {
+    title: 'Phone case',
+    price: 23,
+    quantity: 2,
+    category: 'Accessories',
+  },
+  {
+    title: 'Android phone',
+    price: 150,
+    quantity: 1,
+    category: 'Phones',
+  },
+  {
+    title: 'Headphones',
+    price: 78,
+    quantity: 1,
+    category: 'Accessories',
+  },
+  {
+    title: 'Sport Watch',
+    price: 55,
+    quantity: 2,
+    category: 'Watches',
+  },
+]
+
+console.log(quantitiesByCategories(inputProducts));
+/* {
+  Accessories: 3,
+  Phones: 1,
+  Watches: 2
+} */
