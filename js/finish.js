@@ -954,3 +954,29 @@ console.log(inputProducts); // Оригинальный массив не дол
 
 // const myArray = [50, 23, 10, 29, 108];
 // console.log(myArray.sort((a, b) => b - a));
+
+// 52-template-literals
+
+const templateLiteral = (num) => {
+  return `Число ${num}.
+Это число меньше ${num < 10 ? 'меньше' : 'больше или равно'} 10.
+Квадратный корень этого числа - ${Math.sqrt(num)}.`
+};
+
+// ТЕСТ 1
+const myNumber = 9
+console.log(templateLiteral(myNumber));
+/* 
+Число 9.
+Это число меньше 10.
+Квадратный корень этого числа - 3.
+*/
+
+// ТЕСТ 2
+const myAnotherNumber = 25
+console.log(templateLiteral(myAnotherNumber));
+/* 
+Число 25.
+Это число больше или равно 10.
+Квадратный корень этого числа - 5.
+*/
