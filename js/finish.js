@@ -1017,3 +1017,29 @@ console.log(meanScore(...scores1, ...scores2, ...scores3));
 
 console.log(meanScore(...scores4));
 // Все аргументы в вызове функции должны быть числами!
+
+// 54-default-function-parameters
+
+// function weatherForecast(city, weather) {
+//   weather = weather !== undefined ? weather : 'Отличная погода!';
+//   return `Прогноз погоды для города ${city}: ${weather}`;
+// }
+
+function weatherForecast(city, weather = 'Отличная погода!') {
+  return `Прогноз погоды для города ${city}: ${weather}`;
+}
+
+console.log(weatherForecast('Dubai', 'Солнечно'));
+// Прогноз погоды для города Dubai: Солнечно
+
+console.log(weatherForecast('London', 'Небольшой дождь'));
+// Прогноз погоды для города London: Небольшой дождь
+
+console.log(weatherForecast('Paris'));
+// Прогноз погоды для города Paris: Отличная погода!
+
+console.log(weatherForecast('Miami', ''));
+// Прогноз погоды для города Miami:
+
+console.log(weatherForecast('Las Vegas', undefined));
+// Прогноз погоды для города Las Vegas: Отличная погода!
