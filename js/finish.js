@@ -1095,5 +1095,21 @@ const processQuantities = ([minQty, maxQty, defaultQty = 0]) => {
 const inputQuantities1 = [8, 29, 10]
 console.log(processQuantities(inputQuantities1)) // 31
 
-const inputQuantities2 = [8, 29]
-console.log(processQuantities(inputQuantities2)) // 21
+const inputQuantities2 = [8, 29];
+console.log(processQuantities(inputQuantities2)); // 21
+
+// 56-destrure-function-result
+
+function minMax(...nums) {
+  return [Math.min(...nums), Math.max(...nums)];
+}
+
+let min, max
+/* Вызовите здесь функцию "minMax" с аргументами 24, 5, 34, 10 
+и используя деструктуризацию массивов присвойте значения переменным "min" и "max" */
+;[min, max] = minMax(24, 5, 34, 10);
+console.log(min, max); // 5, 34
+
+/* Вызовите здесь функцию "minMax" еще раз с аргументами 18, 23, 103, 70, 80, 25 */
+;[min, max] = minMax(18, 23, 103, 70, 80, 25);
+console.log(min, max); // 18, 103
