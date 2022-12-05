@@ -1113,3 +1113,48 @@ console.log(min, max); // 5, 34
 /* Вызовите здесь функцию "minMax" еще раз с аргументами 18, 23, 103, 70, 80, 25 */
 ;[min, max] = minMax(18, 23, 103, 70, 80, 25);
 console.log(min, max); // 18, 103
+
+// 57-destructuring-odject
+
+const personInfo = (person) => {
+  const {
+    name,
+    age: personAge, 
+    location: {country: origin, city: homeCity }, 
+    friendsQty = 0,
+    createdAtYear = new Date().getFullYear(),
+  } = person;
+
+  return {
+    name,
+    personAge,
+    origin,
+    homeCity,
+    friendsQty,
+    createdAtYear,
+  };
+
+};
+
+const person = {
+  name: 'Alice',
+  age: 19,
+  location: {
+    country: 'England',
+    city: 'London',
+  },
+};
+
+const result = personInfo(person)
+
+console.log(result)
+/*
+{
+  name: "Alice",
+  personAge: 19,
+  origin: "England",
+  homeCity: "London",
+  friendsQty: 0,
+  createdAtYear: *current year*
+}
+*/
