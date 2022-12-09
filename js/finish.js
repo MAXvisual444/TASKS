@@ -1278,3 +1278,21 @@ myExtendedArray2.forEach((el) => console.log(el));
 // // Array instances don't have access to methods sum and onlyNumbers
 // const myArray = [1, 2, 3]
 // myArray.sum()
+
+// 61-custom-push-method-for-arrays
+class CustomArray extends Array {
+  customPush(newElement) {
+    this[this.length] = newElement;
+    console.log(this.length);
+    console.log(`Новый элемент ${newElement} был только что добавлен в массив`);
+  }
+}
+
+const myCustomArray = new CustomArray(10, 3, 7, 5);
+myCustomArray.customPush(25);
+
+console.log(myCustomArray);
+
+myCustomArray.Push(30);
+
+console.log(myCustomArray);
