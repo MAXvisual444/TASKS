@@ -1380,3 +1380,24 @@ if (b > a) {
 
 console.log(c)
 // Uncaught ReferenceError: c is not defined
+
+// 66-ternary-operator
+
+function isNumber(a) {
+  return typeof a === 'number' ? `${a} - это число` : `${a} - это не число`;
+
+  // if (typeof a === 'number') { 
+    //    return `${a} - это число` 
+    //  } else {
+    //    return `${a} - это не число`
+    //  }
+}
+
+console.log(isNumber(10))
+// 10 - это число
+
+console.log(isNumber('Привет'))
+// Привет - это не число
+
+console.log(isNumber(true))
+// true - это не число
