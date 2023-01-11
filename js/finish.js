@@ -1401,3 +1401,21 @@ console.log(isNumber('Привет'))
 
 console.log(isNumber(true))
 // true - это не число
+
+// 67-arrow-functions
+
+// function mult(a, b) {
+//   return a * b
+// }
+
+// setTimeout(function () {
+//   console.log(mult(5, 10))
+// }, 1000)
+// 50
+
+const mult = (a, b) => a * b;
+
+setTimeout(() => {
+  console.log(mult(5, 10))
+}, 1000);
+// 50
