@@ -1436,3 +1436,25 @@ multiplyBy(2, 0);
 
 multiplyBy(5, 10);
 // 50
+
+// 69-presence-of-the-function-parameters
+function square(a) {
+  // // OPTION 1
+  // if (a === undefined) {
+  //   throw new Error('Функция "square" не может быть вызвана без аргумента')
+  // }
+
+  // OPTION 2
+  if (arguments.length === 0) {
+    throw new Error('Функция "square" не может быть вызвана без аргумента');
+  }
+
+  console.log(a * a);
+}
+
+square(10);
+// 100
+
+square();
+// ДО: NaN
+// ПОСЛЕ: Uncaught Error: Функция "square" не может быть вызвана без аргумента
