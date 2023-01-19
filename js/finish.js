@@ -1485,3 +1485,18 @@ const mult = ({ x, y, z }) => x * y * z
 const result = mult(objectWithNumbers)
 console.log(result)
 // 300
+
+// 71-destrucring-and-rest-operator
+
+const arr = [1, 2, 3, 4, 5, 6, 7]
+
+const [a, b, ...c] = arr
+
+console.log(a)
+// 1
+
+console.log(b)
+// 2
+
+console.log(c)
+// [3, 4, 5, 6, 7]
