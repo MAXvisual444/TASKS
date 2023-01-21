@@ -1517,4 +1517,23 @@ console.log(a);
 console.log(b);
 console.log(c);
 
+// 73-copy-array
+
+const a = [1, 2, 3];
+
+// // OPTION 1
+// const b = [...a];
+
+// OPTION 2
+// const b = Array.from(a);
+
+// OPTION 3
+const b = JSON.parse(JSON.stringify(a));
+
+b.push('newElement');
+
+console.log(a);
+
+console.log(b);
+
 
